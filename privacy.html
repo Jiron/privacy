@@ -4,15 +4,202 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Jiron | Privacy Policy</title>
+      <meta name="description" content="How Jiron.dev, DiscordDevTools and InterLink handle personal data.">
+      <style>
+         *, *::before, *::after { box-sizing: border-box; }
+
+         :root {
+            color-scheme: light dark;
+            --bg: #fbfbfa;
+            --surface: #ffffff;
+            --text: #23262a;
+            --muted: #5f666e;
+            --rule: #e1e4e8;
+            --link: #1f5199;
+         }
+
+         @media (prefers-color-scheme: dark) {
+            :root {
+               --bg: #15181b;
+               --surface: #1b1f24;
+               --text: #d3d8dd;
+               --muted: #929aa3;
+               --rule: #2b3137;
+               --link: #85b3ef;
+            }
+         }
+
+         html { -webkit-text-size-adjust: 100%; }
+
+         body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                         "Helvetica Neue", Arial, sans-serif;
+            font-size: 17px;
+            line-height: 1.65;
+         }
+
+         main {
+            max-width: 46rem;
+            margin: 0 auto;
+            padding: 3.5rem 1.5rem 4rem;
+         }
+
+         /* Long bare URLs are common in this document and must not widen the page. */
+         p, li { overflow-wrap: break-word; }
+
+         h1 {
+            font-size: 2rem;
+            line-height: 1.2;
+            letter-spacing: -0.015em;
+            margin: 0 0 0.35rem;
+         }
+
+         .updated { margin: 0; color: var(--muted); font-size: 0.9rem; }
+
+         .intro {
+            margin: 1.75rem 0 0;
+            font-size: 1.06rem;
+            color: var(--muted);
+         }
+
+         h2, h3 { scroll-margin-top: 1.5rem; }
+
+         h2 {
+            font-size: 1.32rem;
+            line-height: 1.3;
+            margin: 3.25rem 0 1rem;
+            padding-top: 1.75rem;
+            border-top: 1px solid var(--rule);
+         }
+
+         h3 { font-size: 1.09rem; margin: 2.25rem 0 0.6rem; }
+
+         /* Subsection labels (a., b., c. ...). Same colour as the text so they
+            stay findable when scanning a long section; whitespace separates them. */
+         h4 {
+            font-size: 1.01rem;
+            font-weight: 600;
+            margin: 1.9rem 0 0.5rem;
+         }
+
+         p { margin: 0.9rem 0; }
+         ul { margin: 0.9rem 0; padding-left: 1.35rem; }
+         li { margin: 0.45rem 0; }
+         strong { font-weight: 600; }
+
+         a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
+         a:hover { text-decoration-thickness: 2px; }
+
+         /* Contents */
+         .toc {
+            margin: 2.75rem 0 0;
+            padding: 1.35rem 1.6rem;
+            background: var(--surface);
+            border: 1px solid var(--rule);
+            border-radius: 8px;
+         }
+
+         .toc h2 {
+            margin: 0 0 0.8rem;
+            padding: 0;
+            border: 0;
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            color: var(--muted);
+         }
+
+         .toc ul { margin: 0; padding: 0; list-style: none; }
+         .toc > ul > li { margin: 0.5rem 0; }
+         .toc ul ul {
+            margin: 0.35rem 0 0.75rem;
+            padding-left: 1rem;
+            border-left: 1px solid var(--rule);
+         }
+         .toc ul ul li { margin: 0.2rem 0; font-size: 0.94rem; }
+         .toc a { color: inherit; text-decoration: none; }
+         .toc a:hover { color: var(--link); text-decoration: underline; }
+
+         footer {
+            margin-top: 3.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--rule);
+            font-size: 0.85rem;
+            color: var(--muted);
+         }
+         footer h3 { font-size: 0.85rem; font-weight: 600; margin: 0 0 0.4rem; }
+         footer p { margin: 0; }
+
+         @media (max-width: 600px) {
+            body { font-size: 16px; }
+            main { padding: 2.25rem 1.1rem 3rem; }
+            h1 { font-size: 1.6rem; }
+            h2 { font-size: 1.2rem; margin-top: 2.5rem; }
+            .toc { padding: 1.15rem 1.2rem; }
+         }
+
+         @media print {
+            :root { --bg: #fff; --surface: #fff; --text: #000; --muted: #444; --rule: #bbb; --link: #000; }
+            main { max-width: none; padding: 0; }
+            .toc { break-inside: avoid; }
+            h2, h3, h4 { break-after: avoid; }
+         }
+      </style>
    </head>
    <body>
-      <br>
-      <p>Last updated on: 13.09.2026</p>
-      <br>
-      <p>Transparent handling of personal data is very important to us. This data protection statement provides information on what personal data we collect, for what purpose and to whom we pass it on. We regularly review and update this privacy policy to ensure the highest level of transparency.</p>
-      <br>
-      <h2>1. What services we use and provide (free of charge, we do not make money)</h2>
-      <p></p>
+      <main>
+         <header>
+            <h1>Privacy Policy</h1>
+            <p class="updated">Last updated on: 13.09.2026</p>
+            <p class="intro">Transparent handling of personal data is very important to us. This data protection statement provides information on what personal data we collect, for what purpose and to whom we pass it on. We regularly review and update this privacy policy to ensure the highest level of transparency.</p>
+         </header>
+      <nav class="toc" aria-labelledby="toc-h">
+         <h2 id="toc-h">Contents</h2>
+         <ul>
+            <li><a href="#s1">1. What services we use and provide (free of charge, we do not make money)</a></li>
+            <li><a href="#s2">2. Contact Information</a></li>
+            <li><a href="#s3">3. General principles</a>
+               <ul>
+                  <li><a href="#s3-1">3.1 What data we collect from you and from whom we receive this data</a></li>
+                  <li><a href="#s3-2">3.2 Under what conditions do we process your data?</a></li>
+                  <li><a href="#s3-3">3.3 How can you withdraw your consent?</a></li>
+                  <li><a href="#s3-4">3.4 In which cases can we share your data with third parties?</a></li>
+                  <li><a href="#s3-5">3.5 How long do we keep your data?</a></li>
+                  <li><a href="#s3-6">3.6 How do we protect your data?</a></li>
+                  <li><a href="#s3-7">3.7 What rights do you have?</a></li>
+                  <li><a href="#s3-8">3.8 Changes to the privacy policy</a></li>
+                  <li><a href="#s3-9">3.9 Cookies and similar technologies</a></li>
+                  <li><a href="#s3-10">3.10 Children and minimum age</a></li>
+                  <li><a href="#s3-11">3.11 Automated decision-making</a></li>
+               </ul>
+            </li>
+            <li><a href="#s4">4. Individual data processing operations</a>
+               <ul>
+                  <li><a href="#s4-1">4.1 Providing the website and creating log files</a></li>
+                  <li><a href="#s4-2">4.2 Cloudflare Browser Insights</a></li>
+                  <li><a href="#s4-3">4.3 Cloudflare CDN</a></li>
+                  <li><a href="#s4-4">4.4 Cloudflare Stream</a></li>
+                  <li><a href="#s4-5">4.5 Cloudflare Rocket Loader</a></li>
+                  <li><a href="#s4-6">4.6 Cloudflare Bot Management</a></li>
+                  <li><a href="#s4-7">4.7 Cloudflare Turnstile</a></li>
+                  <li><a href="#s4-8">4.8 Cloudflare Workers and Cloudflare Pages</a></li>
+                  <li><a href="#s4-9">4.9 DiscordDevTools API and Welcome Image Generator</a></li>
+                  <li><a href="#s4-10">4.10 InterLink (Discord bot, web call panel and Discord Activity)</a></li>
+                  <li><a href="#s4-11">4.11 MongoDB Atlas</a></li>
+                  <li><a href="#s4-12">4.12 Google Hosted Libraries</a></li>
+                  <li><a href="#s4-13">4.13 GitHub Pages</a></li>
+                  <li><a href="#s4-14">4.14 Discord</a></li>
+               </ul>
+            </li>
+            <li><a href="#s5">5. Additional note for Discord</a></li>
+            <li><a href="#s6">6. Legal Priority</a></li>
+         </ul>
+      </nav>
+      <h2 id="s1">1. What services we use and provide (free of charge, we do not make money)</h2>
       <p><strong>Third-party services we use:</strong></p>
       <ul>
          <li><span>Cloudflare Browser Insights</span></li>
@@ -29,20 +216,18 @@
       </ul>
       <p><strong>Services we provide ourselves:</strong></p>
       <ul>
-         <li><span>Jiron.dev (https://www.jiron.dev)</span></li>
-         <li><span>DiscordDevTools website (https://www.discorddevtools.xyz)</span></li>
-         <li><span>DiscordDevTools API, including the Welcome Image Generator (https://api.discorddevtools.xyz)</span></li>
-         <li><span>InterLink &ndash; Discord bot, web call panel and Discord Activity (https://www.interlink.gg, https://calls.interlink.gg)</span></li>
+         <li><span>Jiron.dev (<a href="https://www.jiron.dev">https://www.jiron.dev</a>)</span></li>
+         <li><span>DiscordDevTools website (<a href="https://www.discorddevtools.xyz">https://www.discorddevtools.xyz</a>)</span></li>
+         <li><span>DiscordDevTools API, including the Welcome Image Generator (<a href="https://api.discorddevtools.xyz">https://api.discorddevtools.xyz</a>)</span></li>
+         <li><span>InterLink &ndash; Discord bot, web call panel and Discord Activity (<a href="https://www.interlink.gg">https://www.interlink.gg</a>, <a href="https://calls.interlink.gg">https://calls.interlink.gg</a>)</span></li>
       </ul>
-      <p></p>
-      <br>
-      <h2>2. Contact Information</h2>
+      <h2 id="s2">2. Contact Information</h2>
       <p>If you have any questions or concerns about our protection of your data, you can always reach us by email at contact@jiron.dev. Responsible for data processing done through this website is:</p>
-      <br>
-      <p>Manassés Zähnler<br>Switzerland<br><br><strong>Data protection officer: </strong><br><br>Manassés Zähnler<br>Switzerland<br></p>
-      <br>
-      <h2>3. General principles</h2>
-      <h3>3.1 What data we collect from you and from whom we receive this data</h3>
+      <p>Manassés Zähnler<br>Switzerland</p>
+      <p><strong>Data protection officer: </strong></p>
+      <p>Manassés Zähnler<br>Switzerland<br></p>
+      <h2 id="s3">3. General principles</h2>
+      <h3 id="s3-1">3.1 What data we collect from you and from whom we receive this data</h3>
       <p>First and foremost, we process personal data that you provide to us or that we collect when operating our website. We may also receive personal data about you from third parties. These may be the following categories:</p>
       <ul>
          <li>Contact information, if you choose to send it to us (e.g. the email address you write to us from, and the content of your message);</li>
@@ -53,17 +238,15 @@
          <li>Sound recordings and live audio (your speech in a Discord voice channel, but only if you have switched the "Allow Voice Transfer" setting of InterLink on &ndash; see section 4.10);</li>
          <li>Your settings and preferences for our services (for example which InterLink features you have enabled, and whether you have accepted the terms).</li>
       </ul>
-      <br>
       <p>We do <strong>not</strong> ask for and do not knowingly process: payment or account details (our services are free of charge and we do not take payments), health data, biometric identifiers, government identification numbers, or the contents of your private Discord messages.</p>
-      <br>
-      <h3>3.2 Under what conditions do we process your data?</h3>
-      <p>We process your data in good faith and for the purposes set out in this privacy policy. In doing so, we ensure transparent and proportionate processing.<br><br>If, in exceptional cases, we are unable to comply with these principles, the data processing may still be lawful because there is a justification. A justification reason may be in particular:</p>
+      <h3 id="s3-2">3.2 Under what conditions do we process your data?</h3>
+      <p>We process your data in good faith and for the purposes set out in this privacy policy. In doing so, we ensure transparent and proportionate processing.</p>
+      <p>If, in exceptional cases, we are unable to comply with these principles, the data processing may still be lawful because there is a justification. A justification reason may be in particular:</p>
       <ul>
          <li>Your consent;</li>
          <li>the execution of a contract or pre-contractual measures;</li>
          <li>our legitimate interests, unless your interests are overridden.</li>
       </ul>
-      <br>
       <p>Where the EU/EEA General Data Protection Regulation (GDPR) or the UK GDPR applies to you, the legal bases we rely on are the following:</p>
       <ul>
          <li><strong>Consent (Art. 6(1)(a) GDPR):</strong> transferring and, where applicable, recording your voice through InterLink; displaying your Discord username, display name or profile picture on our call panel. Each of these is off by default and is only switched on by you through the bot's <strong>/settings</strong> command, and you can switch it off again at any time.</li>
@@ -71,40 +254,36 @@
          <li><strong>Legitimate interests (Art. 6(1)(f) GDPR):</strong> keeping our servers and services available and secure, preventing abuse and attacks, rate limiting, writing server and request log files, and diagnosing faults. Our interest is in operating a functioning and secure service; we balance it against your interest in not being monitored more than necessary by keeping the data minimal and the retention short.</li>
          <li><strong>Legal obligations (Art. 6(1)(c) GDPR):</strong> where we are required by law to retain or disclose data.</li>
       </ul>
-      <br>
-      <h3>3.3 How can you withdraw your consent?</h3>
-      <p>If you have given us consent to process your personal data for specific purposes, we will process your data within the scope of this consent unless we have another justification.<br><br>You can revoke your consent at any time by sending an e-mail to contact@jiron.dev (see section 2). Where the consent concerns an InterLink setting, you can also simply switch that setting off again with the bot's <strong>/settings</strong> command, which takes effect immediately. Data processing that has already taken place is not affected by this.</p>
-      <br>
-      <h3>3.4 In which cases can we share your data with third parties?</h3>
-      <br>
+      <h3 id="s3-3">3.3 How can you withdraw your consent?</h3>
+      <p>If you have given us consent to process your personal data for specific purposes, we will process your data within the scope of this consent unless we have another justification.</p>
+      <p>You can revoke your consent at any time by sending an e-mail to contact@jiron.dev (see section 2). Where the consent concerns an InterLink setting, you can also simply switch that setting off again with the bot's <strong>/settings</strong> command, which takes effect immediately. Data processing that has already taken place is not affected by this.</p>
+      <h3 id="s3-4">3.4 In which cases can we share your data with third parties?</h3>
       <h4>a. Principle</h4>
       <p>We may need to rely on the services of third parties or affiliates and engage them to process your data (known as processors). Categories of recipients are namely:</p>
       <ul>
          <li>IT service provider (web hosting, support, cloud services, content delivery, database hosting, etc.);</li>
          <li>Consulting firms (legal, tax, etc.), if we ever need advice on a specific matter.</li>
       </ul>
-      <br>
       <p>Concretely, the following recipients currently receive personal data when you use our services. Each of them acts as our processor or, where they determine their own purposes, as an independent controller:</p>
       <ul>
          <li><strong>Cloudflare, Inc.</strong>, 101 Townsend St, San Francisco, CA 94107, USA &ndash; content delivery, security, bot protection, performance measurement and hosting (see sections 4.2 to 4.8);</li>
-         <li><strong>GitHub, Inc.</strong> (Microsoft Corporation), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA &ndash; hosting of https://www.jiron.dev and of this privacy policy on GitHub Pages (see section 4.13);</li>
+         <li><strong>GitHub, Inc.</strong> (Microsoft Corporation), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA &ndash; hosting of <a href="https://www.jiron.dev">https://www.jiron.dev</a> and of this privacy policy on GitHub Pages (see section 4.13);</li>
          <li><strong>Google LLC / Google Ireland Ltd.</strong> &ndash; delivery of a JavaScript library from ajax.googleapis.com on the DiscordDevTools website (see section 4.12);</li>
          <li><strong>MongoDB, Inc.</strong>, 1633 Broadway, New York, NY 10019, USA &ndash; database hosting for InterLink settings on MongoDB Atlas (see section 4.11);</li>
          <li><strong>Discord Inc.</strong>, 444 De Haro Street #200, San Francisco, CA 94107, USA &ndash; the platform our bot, web panel login and Activity run on (see section 4.14);</li>
          <li><strong>Our hosting provider</strong> for the servers on which the DiscordDevTools API and the InterLink bot run.</li>
       </ul>
-      <br>
-      <p>We do not sell your personal data, we do not share it for advertising purposes, and we do not use it for advertising profiling. We ensure that these third parties and our affiliates comply with the requirements of data protection and treat your personal data confidentially.<br><br>We may also be required to disclose your personal information to government authorities.</p>
-      <br>
+      <p>We do not sell your personal data, we do not share it for advertising purposes, and we do not use it for advertising profiling. We ensure that these third parties and our affiliates comply with the requirements of data protection and treat your personal data confidentially.</p>
+      <p>We may also be required to disclose your personal information to government authorities.</p>
       <h4>b. Visiting our social media channels and other external links</h4>
-      <p>We may have embedded links to our social media channels on our website. This is apparent to you in each case (typically via corresponding icons). If you click on the icons, you will be redirected to our social media channels.<br><br>In this case, the social media providers learn that you are accessing their platform from our website. The social media providers can use the data collected in this way for their own purposes. We would like to point out that we have no knowledge of the content of the transmitted data or its use by the operators.<br><br>The external links currently present on our websites lead to: Discord (our support server), GitHub, LinkedIn, Buy Me a Coffee (voluntary donations, operated by Buy Me a Coffee), and Flaticon (attribution for icons we use). These are plain links &ndash; nothing is loaded from those providers until you click, and we receive no data back from them. If you donate through Buy Me a Coffee, the payment is handled entirely by that provider under its own privacy policy; we never see your payment details.</p>
-      <br>
+      <p>We may have embedded links to our social media channels on our website. This is apparent to you in each case (typically via corresponding icons). If you click on the icons, you will be redirected to our social media channels.</p>
+      <p>In this case, the social media providers learn that you are accessing their platform from our website. The social media providers can use the data collected in this way for their own purposes. We would like to point out that we have no knowledge of the content of the transmitted data or its use by the operators.</p>
+      <p>The external links currently present on our websites lead to: Discord (our support server), GitHub, LinkedIn, Buy Me a Coffee (voluntary donations, operated by Buy Me a Coffee), and Flaticon (attribution for icons we use). These are plain links &ndash; nothing is loaded from those providers until you click, and we receive no data back from them. If you donate through Buy Me a Coffee, the payment is handled entirely by that provider under its own privacy policy; we never see your payment details.</p>
       <h4>c. Transfer abroad</h4>
-      <p>Under certain circumstances, your personal data may be transferred to companies abroad in the course of order processing. These companies are obligated to data protection to the same extent as we are. The transfer may take place worldwide.<br><br>If the level of data protection does not correspond to that in Switzerland, we carry out a prior risk assessment and ensure contractually that the same level of protection is guaranteed as in Switzerland (for example, by means of the new standard contractual clauses of the EU Commission or other legally prescribed measures). If our risk assessment is negative, we take additional technical measures to protect your data. You can access the EU Commission's standard contractual clauses at the following link. https://commission.europa.eu/publications/standard-contractual-clauses-controllers-and-processors-eueea_de</p>
-      <br>
+      <p>Under certain circumstances, your personal data may be transferred to companies abroad in the course of order processing. These companies are obligated to data protection to the same extent as we are. The transfer may take place worldwide.</p>
+      <p>If the level of data protection does not correspond to that in Switzerland, we carry out a prior risk assessment and ensure contractually that the same level of protection is guaranteed as in Switzerland (for example, by means of the new standard contractual clauses of the EU Commission or other legally prescribed measures). If our risk assessment is negative, we take additional technical measures to protect your data. You can access the EU Commission's standard contractual clauses at the following link. <a href="https://commission.europa.eu/publications/standard-contractual-clauses-controllers-and-processors-eueea_de">https://commission.europa.eu/publications/standard-contractual-clauses-controllers-and-processors-eueea_de</a></p>
       <p>In practice, personal data is currently transferred to the <strong>United States of America</strong> (Cloudflare, GitHub, MongoDB, Discord and, where the library is loaded, Google) and may be processed in any country in which those providers operate infrastructure. For the United States we rely on the EU-U.S. Data Privacy Framework where the provider is certified under it, and otherwise on the EU Commission's standard contractual clauses together with the technical measures described in section 3.6. Cloudflare and MongoDB Atlas allow data to be kept in specific regions; where we have that choice we prefer European or Swiss locations.</p>
-      <br>
-      <h3>3.5 How long do we keep your data?</h3>
+      <h3 id="s3-5">3.5 How long do we keep your data?</h3>
       <p>We store personal data only for as long as is necessary to fulfill the individual purposes for which the data was collected. The periods below apply to the individual processing operations described in section 4:</p>
       <ul>
          <li><strong>Server and request log files</strong> (including your IP address, the requested URL and your browser details): up to <strong>12 months</strong> from the day the entry is written, after which the daily log file is deleted.</li>
@@ -116,55 +295,47 @@
          <li><strong>Discord OAuth login cookies</strong> for the web call panel: for the lifetime of the cookie, or until you log out or clear your browser's cookies.</li>
          <li><strong>Emails you send us:</strong> for as long as needed to deal with your request, and afterwards where we are required to retain them.</li>
       </ul>
-      <br>
       <p>Where legal regulations require us to store data for longer &ndash; in particular business communications and accounting records, which must be retained for up to 10 years &ndash; those periods take precedence. As far as we no longer need such data from you to perform the services, the data will be blocked and we will only use it for accounting and tax purposes.</p>
-      <br>
-      <h3>3.6 How do we protect your data?</h3>
-      <p>We will keep your information secure and take all reasonable steps to protect your information from loss, access, misuse or alteration.<br><br>Our contractual partners and employees who have access to your data are obliged to comply with data protection regulations. In some cases, it will be necessary for us to pass on your requests to companies affiliated with us. In these cases, too, your data will be treated confidentially.<br><br>Within our website, we use the SSL (Secure Socket Layer) procedure in conjunction with the highest encryption level supported by your browser.</p>
-      <br>
-      <h3>3.7 What rights do you have?</h3>
-      <br>
+      <h3 id="s3-6">3.6 How do we protect your data?</h3>
+      <p>We will keep your information secure and take all reasonable steps to protect your information from loss, access, misuse or alteration.</p>
+      <p>Our contractual partners and employees who have access to your data are obliged to comply with data protection regulations. In some cases, it will be necessary for us to pass on your requests to companies affiliated with us. In these cases, too, your data will be treated confidentially.</p>
+      <p>Within our website, we use the SSL (Secure Socket Layer) procedure in conjunction with the highest encryption level supported by your browser.</p>
+      <h3 id="s3-7">3.7 What rights do you have?</h3>
       <h4>a. Right to information</h4>
-      <p>You can request information about the data we have stored about you at any time. We ask you to send your request for information together with proof of identity to contact@jiron.dev.<br><br>You also have the right to receive your data in a common file format if we process your data automatically and if:</p>
+      <p>You can request information about the data we have stored about you at any time. We ask you to send your request for information together with proof of identity to contact@jiron.dev.</p>
+      <p>You also have the right to receive your data in a common file format if we process your data automatically and if:</p>
       <ul>
          <li>you have given your consent for the processing of this data; or</li>
          <li>you have disclosed data in connection with the conclusion or performance of a contract.</li>
       </ul>
-      <p>We may restrict or refuse to provide information or data if this conflicts with our legal obligations, our own legitimate interests, public interests or the interests of a third party.<br><br>The processing of your request is subject to the statutory processing period of 30 days. However, we may extend this period due to a high volume of requests, for legal or technical reasons, or because we need more detailed information from you. You will be informed of the extension of the deadline in good time, at least in text form.</p>
-      <br>
+      <p>We may restrict or refuse to provide information or data if this conflicts with our legal obligations, our own legitimate interests, public interests or the interests of a third party.</p>
+      <p>The processing of your request is subject to the statutory processing period of 30 days. However, we may extend this period due to a high volume of requests, for legal or technical reasons, or because we need more detailed information from you. You will be informed of the extension of the deadline in good time, at least in text form.</p>
       <h4>b. Deletion and correction</h4>
-      <br>
-      <p>You have the option of requesting the deletion or correction of your data at any time. We may reject the request if statutory provisions oblige us to store the data for a longer period or to retain it unchanged or if your request conflicts with a legal requirement.<br><br>Please note that exercising your rights may be in conflict with contractual agreements and may have corresponding effects on the performance of the contract (e.g. premature termination of the contract or cost consequences).</p>
-      <br>
+      <p>You have the option of requesting the deletion or correction of your data at any time. We may reject the request if statutory provisions oblige us to store the data for a longer period or to retain it unchanged or if your request conflicts with a legal requirement.</p>
+      <p>Please note that exercising your rights may be in conflict with contractual agreements and may have corresponding effects on the performance of the contract (e.g. premature termination of the contract or cost consequences).</p>
       <h4>c. Legal process</h4>
-      <p>If you are affected by the processing of personal data, you have the right to enforce your rights in court or to file a complaint with the competent supervisory authority. The competent supervisory authority in Switzerland is the Federal Data Protection and Information Commissioner: https://www.edoeb.admin.ch<br><br>If you are in the EU or the EEA, you may instead lodge a complaint with the supervisory authority of the member state in which you live, work, or in which you believe the infringement took place. A list of the national authorities is available at https://www.edpb.europa.eu/about-edpb/about-edpb/members_en. If you are in the United Kingdom, the competent authority is the Information Commissioner's Office (https://ico.org.uk).</p>
-      <br>
-      <h3>3.8 Changes to the privacy policy</h3>
-      <p>We may change this privacy policy at any time. The changes will be published on https://jiron.github.io/privacy/privacy.html, you will not be informed separately.</p>
-      <br>
-      <h3>3.9 Cookies and similar technologies</h3>
+      <p>If you are affected by the processing of personal data, you have the right to enforce your rights in court or to file a complaint with the competent supervisory authority. The competent supervisory authority in Switzerland is the Federal Data Protection and Information Commissioner: <a href="https://www.edoeb.admin.ch">https://www.edoeb.admin.ch</a></p>
+      <p>If you are in the EU or the EEA, you may instead lodge a complaint with the supervisory authority of the member state in which you live, work, or in which you believe the infringement took place. A list of the national authorities is available at <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en">https://www.edpb.europa.eu/about-edpb/about-edpb/members_en</a>. If you are in the United Kingdom, the competent authority is the Information Commissioner's Office (<a href="https://ico.org.uk">https://ico.org.uk</a>).</p>
+      <h3 id="s3-8">3.8 Changes to the privacy policy</h3>
+      <p>We may change this privacy policy at any time. The changes will be published on <a href="https://jiron.github.io/privacy/privacy.html">https://jiron.github.io/privacy/privacy.html</a>, you will not be informed separately.</p>
+      <h3 id="s3-9">3.9 Cookies and similar technologies</h3>
       <p>A cookie is a small text file that a website asks your browser to store. We use only cookies that are necessary for our services to work. We do not use advertising cookies, we do not use cross-site tracking cookies, and we do not embed third-party advertising or analytics trackers beyond what is described in this policy.</p>
       <p>The following cookies may be set:</p>
       <ul>
          <li><strong>Cloudflare security cookies</strong> (for example <strong>__cf_bm</strong> and <strong>cf_clearance</strong>), set by Cloudflare on our domains to tell human visitors from bots and to keep a successful security check valid. These are necessary for the security of the service. Cloudflare defines their lifetime, which is typically between 30 minutes and one year.</li>
-         <li><strong>access_token</strong> and <strong>refresh_token</strong>, set by the InterLink web call panel (https://calls.interlink.gg) after you log in with Discord. They contain the tokens Discord issues for your session so we can show you the call panel for a server you are actually in. They are set as HttpOnly, which means page scripts cannot read them, and they are never shared with third parties.</li>
+         <li><strong>access_token</strong> and <strong>refresh_token</strong>, set by the InterLink web call panel (<a href="https://calls.interlink.gg">https://calls.interlink.gg</a>) after you log in with Discord. They contain the tokens Discord issues for your session so we can show you the call panel for a server you are actually in. They are set as HttpOnly, which means page scripts cannot read them, and they are never shared with third parties.</li>
          <li><strong>guildid_view_attempt</strong>, set by the InterLink web call panel to remember which server's call panel you were trying to open, so that you land on the right page after logging in with Discord.</li>
       </ul>
       <p>Because these cookies are strictly necessary to deliver a service you have asked for, we do not ask for consent for them; we are required to inform you about them, which is what this section does. You can delete cookies at any time in your browser settings and refuse them entirely, but the web call panel cannot log you in without them.</p>
       <p>The InterLink call panel and the Discord Activity also keep a real-time connection (WebSocket via Socket.IO) open to our server while you have them open, so that speaking indicators and participants update live. This connection carries the data described in section 4.10 and is closed when you close the page.</p>
-      <br>
-      <h3>3.10 Children and minimum age</h3>
+      <h3 id="s3-10">3.10 Children and minimum age</h3>
       <p>Our services are not directed at children. Because our services are built around Discord, you must meet Discord's own minimum age requirement to use them &ndash; at least 13 years, or the higher minimum age that applies in your country. We do not knowingly collect personal data from children below that age. If you believe that a child has provided us with personal data, please contact us at contact@jiron.dev and we will delete it without undue delay.</p>
-      <br>
-      <h3>3.11 Automated decision-making</h3>
+      <h3 id="s3-11">3.11 Automated decision-making</h3>
       <p>We do not carry out automated decision-making that produces legal effects concerning you or similarly significantly affects you, and we do not carry out profiling for advertising purposes. Our security systems do take automated measures &ndash; Cloudflare Bot Management and our own rate limiting may slow down, challenge or temporarily block a request that looks automated or abusive. These measures affect a request, not a person, and if you are blocked in error you can contact us at contact@jiron.dev.</p>
-      <br>
-      <h2>4. Individual data processing operations</h2>
-      <br>
-      <h3>4.1 Providing the website and creating log files</h3>
-      <br>
+      <h2 id="s4">4. Individual data processing operations</h2>
+      <h3 id="s4-1">4.1 Providing the website and creating log files</h3>
       <h4>What information do we receive and how do we use it?</h4>
-      <p>By visiting https://www.jiron.dev, https://www.discorddevtools.xyz, https://api.discorddevtools.xyz, https://www.interlink.gg, https://calls.interlink.gg, https://jiron.github.io/privacy/ (and any subpage or other missing subdomains of any of those domains), or by using the InterLink Discord Activity, certain data is automatically stored on our servers or on servers of services and products that we obtain and / or have installed, for purposes of system administration, for statistical or backup purposes or for tracking purposes. These are:</p>
+      <p>By visiting <a href="https://www.jiron.dev">https://www.jiron.dev</a>, <a href="https://www.discorddevtools.xyz">https://www.discorddevtools.xyz</a>, <a href="https://api.discorddevtools.xyz">https://api.discorddevtools.xyz</a>, <a href="https://www.interlink.gg">https://www.interlink.gg</a>, <a href="https://calls.interlink.gg">https://calls.interlink.gg</a>, <a href="https://jiron.github.io/privacy/">https://jiron.github.io/privacy/</a> (and any subpage or other missing subdomains of any of those domains), or by using the InterLink Discord Activity, certain data is automatically stored on our servers or on servers of services and products that we obtain and / or have installed, for purposes of system administration, for statistical or backup purposes or for tracking purposes. These are:</p>
       <ul>
          <li>the name of your Internet service provider;</li>
          <li>Your IP address (in some circumstances);</li>
@@ -174,10 +345,8 @@
          <li>the web page from which you are visiting URL;</li>
          <li>the search words you used to find the URL.</li>
       </ul>
-      <br>
-      <br>
       <h4>How these log files are written and what exactly they contain</h4>
-      <p>Our own servers for the DiscordDevTools API (https://api.discorddevtools.xyz) and the Welcome Image Generator write one entry per request into a plain text file. A new file is started every day and the files are grouped into one folder per month. Each entry contains:</p>
+      <p>Our own servers for the DiscordDevTools API (<a href="https://api.discorddevtools.xyz">https://api.discorddevtools.xyz</a>) and the Welcome Image Generator write one entry per request into a plain text file. A new file is started every day and the files are grouped into one folder per month. Each entry contains:</p>
       <ul>
          <li>the date and time of the request, to the millisecond;</li>
          <li>your IP address, and separately the address of the proxy the request arrived through (this is normally Cloudflare), so that a forged address can be recognised;</li>
@@ -188,37 +357,36 @@
       </ul>
       <p>Fields that typically carry credentials are never written to these files. Authorization headers, cookies, API keys and any body field named like a password, secret, token or session are replaced with <strong>[redacted]</strong> before the entry is written. The log folder and files are readable only by the account that runs the server.</p>
       <p>Requests that are malformed enough that they never reach the application are logged too, with the address they came from, because that is the shape most scanner traffic takes.</p>
-      <br>
       <h4>Why may we process this data?</h4>
-      <p>The log files are stored in order to guarantee the functionality of our services, to investigate faults, to recognise and defend against attacks and abuse, and to ensure the security of our information technology systems. This is our legitimate interest (Art. 6(1)(f) GDPR).<br><br>Please note that, unlike what a shorter statement might suggest, an IP address in combination with a timestamp can under some circumstances be traced back to you, and we therefore treat these log files as personal data throughout.</p>
-      <br>
+      <p>The log files are stored in order to guarantee the functionality of our services, to investigate faults, to recognise and defend against attacks and abuse, and to ensure the security of our information technology systems. This is our legitimate interest (Art. 6(1)(f) GDPR).</p>
+      <p>Please note that, unlike what a shorter statement might suggest, an IP address in combination with a timestamp can under some circumstances be traced back to you, and we therefore treat these log files as personal data throughout.</p>
       <h4>How long are they kept and how can you prevent data collection?</h4>
       <p>Log entries are kept for up to 12 months from the day they are written and the daily file is then deleted. Writing them is mandatory for the secure operation of our services, so you have no possibility to object to the logging as such. You can of course limit what ends up in the URL line: everything you pass as a query parameter to our API is written to the log, so do not pass anything there that you would not want stored (see also section 4.9).</p>
-      <br> <br><br>
-      <h3>4.2 Cloudflare Browser Insights</h3>
-      <p>Our website uses the "Cloudflare Browser Insights" service provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). This service collects and analyzes data about the performance and use of our website from the perspective of the end user.<br><br>When you visit our website, various data, including your IP address, information about the browser you are using, website loading times, site interactions, and other technical information, is transmitted to Cloudflare. This data is used by Cloudflare to provide us with detailed reports about the performance of our website and user behavior.</p>
-      <br><br>
-      <h3>4.3 Cloudflare CDN</h3>
-      <p>Our website uses the Content Delivery Network (CDN) service provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). A CDN helps deliver content from our website faster by distributing copies of the content to a network of fast loading servers.<br><br>When you visit our website, your IP address is transmitted to Cloudflare and cookies may be set in your browser, which are necessary for the optimization and security of the service. Cloudflare uses this data to speed up traffic between our web server and your end device and to protect our website from attacks.</p>
-      <br><br>
-      <h3>4.4 Cloudflare Stream</h3>
-      <p>Our website uses the "Cloudflare Stream" service provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). Cloudflare Stream is a video streaming platform that allows us to efficiently host, stream and monetize videos.<br><br>When you watch videos on our website that are provided via Cloudflare Stream, various data, including your IP address, information about the browser you are using, date and time of access, and interaction data with the video, are transmitted to and stored by Cloudflare. This data is used to enable video streaming, monitor performance and improve the user experience.</p>
-      <br><br>
-      <h3>4.5 Cloudflare Rocket Loader</h3>
-      <p>Our website uses the "Cloudflare Rocket Loader" service provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). Rocket Loader optimizes the loading times of web pages by accelerating the delivery of JavaScript resources.<br><br>When you visit our website, technical information, including your IP address and information about the browser you are using, is transmitted to Cloudflare. This data is used by Cloudflare to provide the Rocket Loader service and to improve the performance of our website.</p>
-      <br><br>
-      <h3>4.6 Cloudflare Bot Management</h3>
-      <p>Our website uses the "Cloudflare Bot Management" service provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). This service helps us detect and control automated, non-human (bot-based) traffic to ensure the security of our website and improve the quality of the user experience.<br><br>When you visit our website, various data, including your IP address, information about the browser you are using, behavior on the website, and other technical characteristics, are transmitted to Cloudflare. Cloudflare analyzes this data to determine whether it is human or bot-based traffic and takes appropriate measures to block or control harmful bots.</p>
-      <br><br>
-      <h3>4.7 Cloudflare Turnstile</h3>
-      <p>Our website uses "Cloudflare Turnstile", a service provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). Cloudflare Turnstile is a security service that helps us distinguish human traffic from automated traffic and thus protect our website from misuse.<br><br>Turnstile does not ask you for any information about yourself and does not require you to solve a puzzle; it decides in the background whether the request looks human. It does not use your data for advertising purposes.<br><br>When you fill out forms on our website or perform certain actions that require verification, Cloudflare Turnstile may be used to ensure that you are a human and not a bot. In doing so, various data, including your IP address and information about your interaction with the Cloudflare Turnstile widget, is transmitted to and processed by Cloudflare.</p>
-      <br><br>
-      <h3>4.8 Cloudflare Workers and Cloudflare Pages</h3>
-      <p>We use "Cloudflare Workers" and "Cloudflare Pages", services provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). They allow pages to be delivered, and code to run, on Cloudflare's network close to you instead of on a single central server.<br><br>When you call up a page delivered this way, your request &ndash; including your IP address, the requested address, your browser details and the time of the request &ndash; is processed on Cloudflare's infrastructure so that the response can be produced and returned to you. Cloudflare processes this data on our behalf in order to deliver the page, and keeps its own operational and security logs about it.</p>
-      <br><br>
-      <h3>4.9 DiscordDevTools API and Welcome Image Generator</h3>
-      <p>Our website (https://www.discorddevtools.xyz/) offers a free API intended for developers, reachable at https://api.discorddevtools.xyz. When you use this API we process technical data (your IP address, browser details, request timestamps &ndash; see section 4.1) and, in addition, everything you yourself put into the request.</p>
-      <p>The Welcome Image Generator (https://api.discorddevtools.xyz/welcome-image-generator/generate.png) is driven entirely by URL parameters. Those parameters typically contain <strong>a username and a title and greeting text</strong>, and may contain <strong>a link to a profile picture and to a background image</strong>. This is personal data of the person the image is about &ndash; and that person is usually not you, but a member of the Discord server you are generating the image for.</p>
+      <h3 id="s4-2">4.2 Cloudflare Browser Insights</h3>
+      <p>Our website uses the "Cloudflare Browser Insights" service provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). This service collects and analyzes data about the performance and use of our website from the perspective of the end user.</p>
+      <p>When you visit our website, various data, including your IP address, information about the browser you are using, website loading times, site interactions, and other technical information, is transmitted to Cloudflare. This data is used by Cloudflare to provide us with detailed reports about the performance of our website and user behavior.</p>
+      <h3 id="s4-3">4.3 Cloudflare CDN</h3>
+      <p>Our website uses the Content Delivery Network (CDN) service provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). A CDN helps deliver content from our website faster by distributing copies of the content to a network of fast loading servers.</p>
+      <p>When you visit our website, your IP address is transmitted to Cloudflare and cookies may be set in your browser, which are necessary for the optimization and security of the service. Cloudflare uses this data to speed up traffic between our web server and your end device and to protect our website from attacks.</p>
+      <h3 id="s4-4">4.4 Cloudflare Stream</h3>
+      <p>Our website uses the "Cloudflare Stream" service provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). Cloudflare Stream is a video streaming platform that allows us to efficiently host, stream and monetize videos.</p>
+      <p>When you watch videos on our website that are provided via Cloudflare Stream, various data, including your IP address, information about the browser you are using, date and time of access, and interaction data with the video, are transmitted to and stored by Cloudflare. This data is used to enable video streaming, monitor performance and improve the user experience.</p>
+      <h3 id="s4-5">4.5 Cloudflare Rocket Loader</h3>
+      <p>Our website uses the "Cloudflare Rocket Loader" service provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). Rocket Loader optimizes the loading times of web pages by accelerating the delivery of JavaScript resources.</p>
+      <p>When you visit our website, technical information, including your IP address and information about the browser you are using, is transmitted to Cloudflare. This data is used by Cloudflare to provide the Rocket Loader service and to improve the performance of our website.</p>
+      <h3 id="s4-6">4.6 Cloudflare Bot Management</h3>
+      <p>Our website uses the "Cloudflare Bot Management" service provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). This service helps us detect and control automated, non-human (bot-based) traffic to ensure the security of our website and improve the quality of the user experience.</p>
+      <p>When you visit our website, various data, including your IP address, information about the browser you are using, behavior on the website, and other technical characteristics, are transmitted to Cloudflare. Cloudflare analyzes this data to determine whether it is human or bot-based traffic and takes appropriate measures to block or control harmful bots.</p>
+      <h3 id="s4-7">4.7 Cloudflare Turnstile</h3>
+      <p>Our website uses "Cloudflare Turnstile", a service provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). Cloudflare Turnstile is a security service that helps us distinguish human traffic from automated traffic and thus protect our website from misuse.</p>
+      <p>Turnstile does not ask you for any information about yourself and does not require you to solve a puzzle; it decides in the background whether the request looks human. It does not use your data for advertising purposes.</p>
+      <p>When you fill out forms on our website or perform certain actions that require verification, Cloudflare Turnstile may be used to ensure that you are a human and not a bot. In doing so, various data, including your IP address and information about your interaction with the Cloudflare Turnstile widget, is transmitted to and processed by Cloudflare.</p>
+      <h3 id="s4-8">4.8 Cloudflare Workers and Cloudflare Pages</h3>
+      <p>We use "Cloudflare Workers" and "Cloudflare Pages", services provided by Cloudflare, Inc, 101 Townsend St, San Francisco, CA 94107, USA ("Cloudflare"). They allow pages to be delivered, and code to run, on Cloudflare's network close to you instead of on a single central server.</p>
+      <p>When you call up a page delivered this way, your request &ndash; including your IP address, the requested address, your browser details and the time of the request &ndash; is processed on Cloudflare's infrastructure so that the response can be produced and returned to you. Cloudflare processes this data on our behalf in order to deliver the page, and keeps its own operational and security logs about it.</p>
+      <h3 id="s4-9">4.9 DiscordDevTools API and Welcome Image Generator</h3>
+      <p>Our website (<a href="https://www.discorddevtools.xyz/">https://www.discorddevtools.xyz/</a>) offers a free API intended for developers, reachable at <a href="https://api.discorddevtools.xyz">https://api.discorddevtools.xyz</a>. When you use this API we process technical data (your IP address, browser details, request timestamps &ndash; see section 4.1) and, in addition, everything you yourself put into the request.</p>
+      <p>The Welcome Image Generator (<a href="https://api.discorddevtools.xyz/welcome-image-generator/generate.png">https://api.discorddevtools.xyz/welcome-image-generator/generate.png</a>) is driven entirely by URL parameters. Those parameters typically contain <strong>a username and a title and greeting text</strong>, and may contain <strong>a link to a profile picture and to a background image</strong>. This is personal data of the person the image is about &ndash; and that person is usually not you, but a member of the Discord server you are generating the image for.</p>
       <p>What happens with it:</p>
       <ul>
          <li>The parameters are used to render the image you asked for.</li>
@@ -229,9 +397,8 @@
       <p><strong>If you build on our API, you are responsible for the data you send us.</strong> If you pass other people's personal data to our API, you need your own legal basis for doing so, and you should pass only what the image actually needs. Do not send us anything sensitive, and do not put credentials or tokens into the URL.</p>
       <p>We apply rate limits per IP address to keep the service available; this means we count recent requests per address for a short rolling period.</p>
       <p>If you wish to request deletion of data submitted to the API, please contact us at contact@jiron.dev with as much information as possible &ndash; ideally including the full GET request URL used during submission, so that we can find the cache entry and the log lines. We do not share API data with third parties, and the data is only processed on infrastructure under our control.</p>
-      <br><br>
-      <h3>4.10 InterLink (Discord bot, web call panel and Discord Activity)</h3>
-      <p>InterLink is a free Discord bot that connects the voice channels of two different Discord servers so that their members can talk to each other, together with a web call panel (https://calls.interlink.gg) and a Discord Activity that show who is in the call. The following describes what InterLink processes. The bot's own terms, which you accept before you can set it up, are available at https://calls.interlink.gg/terms and at the same address on our other InterLink domains; where they and this policy differ, section 6 applies.</p>
+      <h3 id="s4-10">4.10 InterLink (Discord bot, web call panel and Discord Activity)</h3>
+      <p>InterLink is a free Discord bot that connects the voice channels of two different Discord servers so that their members can talk to each other, together with a web call panel (<a href="https://calls.interlink.gg">https://calls.interlink.gg</a>) and a Discord Activity that show who is in the call. The following describes what InterLink processes. The bot's own terms, which you accept before you can set it up, are available at <a href="https://calls.interlink.gg/terms">https://calls.interlink.gg/terms</a> and at the same address on our other InterLink domains; where they and this policy differ, section 6 applies.</p>
       <h4>a. What we store in our database</h4>
       <p>We store the following in our database (see section 4.11 for where that database lives):</p>
       <ul>
@@ -261,35 +428,33 @@
       <p>The Discord Activity works the same way, except that Discord itself performs the authorisation inside your Discord client and the resulting token is passed on to the page in the address of the embedded view. We do not store these tokens on our servers; they live in your browser session and expire.</p>
       <h4>f. Your rights, specifically for InterLink</h4>
       <p>To obtain a copy of, correct or delete what we store about you in InterLink, write to contact@jiron.dev and include your <strong>Discord user ID</strong> (in Discord: Settings &rarr; Advanced &rarr; Developer Mode, then right-click your name &rarr; Copy User ID), so that we can identify the right record. Deleting your record resets your settings; the bot will create a fresh, empty record with everything switched off the next time it encounters you. For settings of a Discord <em>server</em>, the request should come from someone who administers that server.</p>
-      <br><br>
-      <h3>4.11 MongoDB Atlas</h3>
+      <h3 id="s4-11">4.11 MongoDB Atlas</h3>
       <p>The InterLink settings described in section 4.10 a. are stored in a database hosted on "MongoDB Atlas", a service of MongoDB, Inc, 1633 Broadway, 38th Floor, New York, NY 10019, USA ("MongoDB"). MongoDB operates the database infrastructure on our behalf as our processor and does not use the content for its own purposes. The connection between our servers and the database is encrypted, and access is restricted to our own credentials. Depending on the cluster region, the data may be processed outside Switzerland and the EEA; section 3.4 c applies to such transfers.</p>
-      <br><br>
-      <h3>4.12 Google Hosted Libraries</h3>
-      <p>Pages of the DiscordDevTools website (https://www.discorddevtools.xyz) load the jQuery JavaScript library from Google Hosted Libraries at <strong>ajax.googleapis.com</strong>, a service of Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, represented in the EEA by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland ("Google").</p>
-      <p>This means your browser establishes a connection to a Google server when you open such a page, and in doing so transmits <strong>your IP address, your user-agent string and the address of the page you are on</strong> to Google. This happens automatically as the page loads. We have no influence over what Google does with this data, and Google may process it in the United States. We use this service only to deliver a standard JavaScript library quickly; we do not receive any data back from Google and we do not use it for analytics or advertising. The legal basis is our legitimate interest in reliable delivery of our website (Art. 6(1)(f) GDPR). Further information: https://policies.google.com/privacy</p>
+      <h3 id="s4-12">4.12 Google Hosted Libraries</h3>
+      <p>Pages of the DiscordDevTools website (<a href="https://www.discorddevtools.xyz">https://www.discorddevtools.xyz</a>) load the jQuery JavaScript library from Google Hosted Libraries at <strong>ajax.googleapis.com</strong>, a service of Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA, represented in the EEA by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland ("Google").</p>
+      <p>This means your browser establishes a connection to a Google server when you open such a page, and in doing so transmits <strong>your IP address, your user-agent string and the address of the page you are on</strong> to Google. This happens automatically as the page loads. We have no influence over what Google does with this data, and Google may process it in the United States. We use this service only to deliver a standard JavaScript library quickly; we do not receive any data back from Google and we do not use it for analytics or advertising. The legal basis is our legitimate interest in reliable delivery of our website (Art. 6(1)(f) GDPR). Further information: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></p>
       <p>If you do not want this connection to be made, you can prevent it with a browser extension that blocks third-party scripts, at the price of some interactive elements of the page no longer working.</p>
-      <br><br>
-      <h3>4.13 GitHub Pages</h3>
-      <p>Our website https://www.jiron.dev and this privacy policy (https://jiron.github.io/privacy/privacy.html) are hosted on "GitHub Pages", a service of GitHub, Inc, 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA, a subsidiary of Microsoft Corporation ("GitHub"). When you open one of these pages, your browser transmits your IP address, your browser details, the requested address and the time of the request to GitHub, which processes and logs this data in order to deliver the page and to secure its service. Further information: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement</p>
+      <h3 id="s4-13">4.13 GitHub Pages</h3>
+      <p>Our website <a href="https://www.jiron.dev">https://www.jiron.dev</a> and this privacy policy (<a href="https://jiron.github.io/privacy/privacy.html">https://jiron.github.io/privacy/privacy.html</a>) are hosted on "GitHub Pages", a service of GitHub, Inc, 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA, a subsidiary of Microsoft Corporation ("GitHub"). When you open one of these pages, your browser transmits your IP address, your browser details, the requested address and the time of the request to GitHub, which processes and logs this data in order to deliver the page and to secure its service. Further information: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement</a></p>
       <p>These pages are static: they contain no forms, no tracking scripts and no analytics, and they set no cookies of their own.</p>
-      <br><br>
-      <h3>4.14 Discord</h3>
+      <h3 id="s4-14">4.14 Discord</h3>
       <p>Our bot and our applications run on the Discord platform, operated by Discord Inc, 444 De Haro Street, Suite 200, San Francisco, CA 94107, USA, represented in the EEA by Discord Netherlands BV ("Discord"). We are not affiliated with Discord (see also section 5).</p>
       <p>Discord is the source of most of the data we process about you: your Discord user ID, username, display name and profile picture, the servers and voice channels you are in, your speaking, mute and deafen state, and the audio you send to a voice channel all reach us through Discord's interfaces. Equally, everything our bot sends &ndash; messages, embeds and call audio &ndash; passes through Discord's infrastructure.</p>
-      <p>Your use of Discord itself is governed by Discord's own privacy policy (https://discord.com/privacy) and terms (https://discord.com/terms), over which we have no influence. We process data received from Discord only for the purposes described in this policy, and we adhere to the Discord Developer Terms of Service and Developer Policy.</p>
-      <br><br>
-      <h2>5. Additional note for Discord</h2>
-      <p>We are in no way affiliated to Discord (https://discord.com). DiscordDevTools is purely a hobby project made to help out other developers that want to create apps/bots or other fun projects on Discord. If there are any concerns regarding the name and/or domain of DiscordDevTools, we are happy to adjust based on Discord's needs. We do not want any legal problems, we just want to get more users to go on Discord and try out developing too. For legal concerns in this matter, please contact us at contact@jiron.dev or text us on Discord (the developers username is "jiron").</p>
-      <h2>6. Legal Priority</h2>
-      <p>If any website which a button that leads to this page also contains a privacy policy page, the information on https://jiron.github.io/privacy/privacy.html has priority. If there's missing information on the original page but is not missing on https://jiron.github.io/privacy/privacy.html, you must assume that the information on https://jiron.github.io/privacy/privacy.html is an addition to the original page so both sites are relevant. You always automatically accept this privacy policy when using our websites. Our websites include, but are not limited to, the websites written right under "What information do we receive and how do we use it?" on this page under chapter 4.1.</p>
+      <p>Your use of Discord itself is governed by Discord's own privacy policy (<a href="https://discord.com/privacy">https://discord.com/privacy</a>) and terms (<a href="https://discord.com/terms">https://discord.com/terms</a>), over which we have no influence. We process data received from Discord only for the purposes described in this policy, and we adhere to the Discord Developer Terms of Service and Developer Policy.</p>
+      <h2 id="s5">5. Additional note for Discord</h2>
+      <p>We are in no way affiliated to Discord (<a href="https://discord.com">https://discord.com</a>). DiscordDevTools is purely a hobby project made to help out other developers that want to create apps/bots or other fun projects on Discord. If there are any concerns regarding the name and/or domain of DiscordDevTools, we are happy to adjust based on Discord's needs. We do not want any legal problems, we just want to get more users to go on Discord and try out developing too. For legal concerns in this matter, please contact us at contact@jiron.dev or text us on Discord (the developers username is "jiron").</p>
+      <h2 id="s6">6. Legal Priority</h2>
+      <p>If any website which a button that leads to this page also contains a privacy policy page, the information on <a href="https://jiron.github.io/privacy/privacy.html">https://jiron.github.io/privacy/privacy.html</a> has priority. If there's missing information on the original page but is not missing on <a href="https://jiron.github.io/privacy/privacy.html">https://jiron.github.io/privacy/privacy.html</a>, you must assume that the information on <a href="https://jiron.github.io/privacy/privacy.html">https://jiron.github.io/privacy/privacy.html</a> is an addition to the original page so both sites are relevant. You always automatically accept this privacy policy when using our websites. Our websites include, but are not limited to, the websites written right under "What information do we receive and how do we use it?" on this page under chapter 4.1.</p>
       <p>The pages this currently applies to are:</p>
       <ul>
-         <li>https://www.discorddevtools.xyz/privacy-policy and https://www.discorddevtools.xyz/terms-of-use;</li>
-         <li>the InterLink terms of service and privacy policy at https://calls.interlink.gg/terms (and at /terms on our other InterLink domains), which you accept in the bot before you can set it up.</li>
+         <li><a href="https://www.discorddevtools.xyz/privacy-policy">https://www.discorddevtools.xyz/privacy-policy</a> and <a href="https://www.discorddevtools.xyz/terms-of-use">https://www.discorddevtools.xyz/terms-of-use</a>;</li>
+         <li>the InterLink terms of service and privacy policy at <a href="https://calls.interlink.gg/terms">https://calls.interlink.gg/terms</a> (and at /terms on our other InterLink domains), which you accept in the bot before you can set it up.</li>
       </ul>
       <p>Those pages remain in force for everything they say that this policy does not contradict &ndash; in particular the InterLink terms describe the individual bot settings, and the DiscordDevTools terms of use govern the use of that website. Where they are shorter, less specific or older than this policy, this policy is the one that counts.</p>
-      <h3>BrainBox Generators</h3>
-      BrainBox Generators is a service of <a style="color:inherit;" href="https://brainbox.swiss/" rel="nofollow" target="_blank">BrainBox Solutions GmbH</a> to recognize all data protection-relevant services on a website and, among other things, to help with the creation of the privacy policy. No personal data is collected or processed in the process. 
+         <footer>
+            <h3>BrainBox Generators</h3>
+            <p>BrainBox Generators is a service of <a href="https://brainbox.swiss/" rel="nofollow" target="_blank">BrainBox Solutions GmbH</a> to recognize all data protection-relevant services on a website and, among other things, to help with the creation of the privacy policy. No personal data is collected or processed in the process.</p>
+         </footer>
+      </main>
    </body>
 </html>
